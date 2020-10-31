@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+	<component content="ProjectRootMandater" version="2"
+		langudateLevel="JDK_11" project-jdk-content="11"
+		project-jdk-type="JavaSDK">
+		<output url="file://$PROJECT_DIR$/out" />
+	</component>
+</project>

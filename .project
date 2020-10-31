@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<content>simplon_test_api</content>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<content>org.eclipse.wst.validation.validationbuilder</content>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<content>org.eclipse.dltk.core.scriptbuilder</content>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.php.core.PHPNature</nature>
+	</natures>
+</projectDescription>
