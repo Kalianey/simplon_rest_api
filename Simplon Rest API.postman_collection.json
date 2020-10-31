@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "260fc170-b21c-4749-ad20-a91f3dfa9ab9",
+		"name": "Simplon Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/simplon/simplon_test_api/api/post/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"simplon",
+						"simplon_test_api",
+						"api",
+						"post",
+						"read.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "14",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/simplon/simplon_test_api/api/topic/read.php?id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"simplon",
+						"simplon_test_api",
+						"api",
+						"topic",
+						"read.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"It is often the first program written by people learning to code.\",\n    \"author\": \"Mary\",\n    \"topicID\": 1\n}"
+				},
+				"url": "http://localhost:80/simplon/simplon_test_api/api/post/create.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Topic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Where are you going on holiday?\",\n    \"content\": \"Lorem ipsum\",\n    \"author\": \"Tim\"\n}"
+				},
+				"url": "http://localhost:80/simplon/simplon_test_api/api/topic/create.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 4,\n    \"content\": \"It can also be used as a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.\",\n    \"author\": \"Arthur\",\n    \"topicID\": 1\n}"
+				},
+				"url": "http://localhost:80/simplon/simplon_test_api/api/post/update.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Topic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"title\": \"Tell me your deepest desire.\"\n}"
+				},
+				"url": "http://localhost:80/simplon/simplon_test_api/api/topic/update.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:80/simplon/simplon_test_api/api/post/delete.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"simplon",
+						"simplon_test_api",
+						"api",
+						"post",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Topic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:80/simplon/simplon_test_api/api/topic/delete.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"simplon",
+						"simplon_test_api",
+						"api",
+						"topic",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
